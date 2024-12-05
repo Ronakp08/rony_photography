@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+// import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import About from "./components/About";
 import Home from "./components/Home";
@@ -8,7 +8,7 @@ import Footer from "./components/Layouts/Footer.jsx"
 import Contact from "./components/Contact.jsx";
 
 function App() {
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
 
   // useEffect(() => {
   //   const timer = setTimeout(() => {
