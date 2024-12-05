@@ -18,74 +18,75 @@ function Photos() {
     <div>
       {/* Section 1 */}
       <div className="max-w-screen-2xl mx-auto px-4 py-16 lg:py-24 bg-gray-50">
-        <div className="flex flex-col md:flex-row mr-12">
-          <div className="flex flex-1 flex-col gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* Column 1 */}
+          <div className="grid grid-cols-1 gap-4">
             <motion.div
-              className="flex"
+              className="grid grid-cols-2 gap-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
               <LazyLoadImage
-                className="object-cover h-auto w-80 rounded-md"
+                className="object-cover w-full h-auto rounded-md"
                 src={photo1}
                 alt="img_01"
               />
               <LazyLoadImage
-                className="object-cover h-auto w-80 rounded-md ml-4"
+                className="object-cover w-full h-auto rounded-md"
                 src={photo4}
                 alt="img_04"
               />
-              
             </motion.div>
             <motion.div
-              className="hidden md:flex gap-4"
+              className="grid grid-cols-2 gap-4 hidden md:grid"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.5 }}
             >
               <LazyLoadImage
-                className="object-cover h-auto w-80 rounded-md"
+                className="object-cover w-full h-auto rounded-md"
                 src={photo9}
-                alt="img_02"
+                alt="img_09"
               />
               <LazyLoadImage
-                className="object-cover h-auto w-80 rounded-md"
+                className="object-cover w-full h-auto rounded-md"
                 src={photo3}
                 alt="img_03"
               />
             </motion.div>
           </div>
-          <div className="flex flex-1 flex-col gap-4">
+
+          {/* Column 2 */}
+          <div className="grid grid-cols-1 gap-4">
             <motion.div
-              className="hidden md:flex gap-4"
+              className="hidden md:block"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.5 }}
             >
-              
               <LazyLoadImage
-                className="object-cover h-98 w-full rounded-md"
+                className="object-cover w-full h-auto rounded-md"
                 src={photo5}
                 alt="img_05"
               />
             </motion.div>
             <motion.div
-              className="flex"
+              className="grid grid-cols-2 gap-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.5 }}
             >
               <LazyLoadImage
-                className="object-cover h-auto w-80 rounded-md"
+                className="object-cover w-full h-auto rounded-md"
                 src={photo6}
                 alt="img_06"
               />
               <LazyLoadImage
-              className="object-cover h-auto w-80 rounded-md ml-4"
-              src={photo2}
-              alt="img_10"
-            />
+                className="object-cover w-full h-auto rounded-md"
+                src={photo2}
+                alt="img_02"
+              />
             </motion.div>
           </div>
         </div>
@@ -93,34 +94,37 @@ function Photos() {
 
       {/* Section 2 */}
       <div className="max-w-screen-2xl mx-auto px-4 py-16 lg:py-24 bg-white">
-        <div className="flex flex-col md:flex-row gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* Column 1 */}
           <motion.div
-            className="flex-1"
+            className="grid"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.5 }}
           >
             <LazyLoadImage
-              className="object-cover h-96 w-full rounded-md"
+              className="object-cover w-full h-auto rounded-md"
               src={photo7}
               alt="img_07"
             />
           </motion.div>
+
+          {/* Column 2 */}
           <motion.div
-            className="flex-1 grid grid-cols-2 gap-4"
+            className="grid grid-cols-1 sm:grid-cols-2 gap-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1, duration: 0.5 }}
           >
             <LazyLoadImage
-              className="object-cover h-96 w-40 rounded-md"
+              className="object-cover w-full h-auto rounded-md"
               src={photo8}
               alt="img_08"
             />
             <LazyLoadImage
-              className="object-cover h-96 w-full rounded-md"
+              className="object-cover w-full h-auto rounded-md"
               src={photo11}
-              alt="img_09"
+              alt="img_11"
             />
           </motion.div>
         </div>
